@@ -13,7 +13,7 @@ void generate_hash(const char *commit_message, char *hash) {
 // save the commit hash and message to the commit history file
 void save_commit(const char *hash, const char *message) {
     char commit_file[512];
-    snprintf(commit_file, sizeof(commit_file), "local_repo/.vcs/commit_history.txt");
+    snprintf(commit_file, sizeof(commit_file), "local_repo/.lit/commit_history.txt");
 
     FILE *file = fopen(commit_file, "a");
     if (!file) {
@@ -28,7 +28,7 @@ void save_commit(const char *hash, const char *message) {
 // function to print the commit history
 void print_commit_history() {
     char commit_file[512];
-    snprintf(commit_file, sizeof(commit_file), "local_repo/.vcs/commit_history.txt");
+    snprintf(commit_file, sizeof(commit_file), "local_repo/.lit/commit_history.txt");
 
     FILE *file = fopen(commit_file, "r");
     if (!file) {
