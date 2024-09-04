@@ -1,8 +1,11 @@
-#ifndef FILE_HANDEL
-#define FILE_HANDEL
+#ifndef FILE_HANDELING_H
+#define FILE_HANDELING_H
 
-void copy_file(const char* src,const char* dest);// copies the content of file from source file to destination file.
-void copy_directory(const char* src,const char* dest);// copies the content of the directory recursively
-char* hash_file(const char* file_path); //Hashes a file and returns a hashed string
+// declarations for file and directory handling
+int create_directory(const char *path);
+void build_directory_path(char *full_path, const char *base, const char *subdir);
+int copy_file(const char *src, const char *dest);
+int copy_directory(const char *src, const char *dest);
+int file_exists(const char *path);
 
 #endif
