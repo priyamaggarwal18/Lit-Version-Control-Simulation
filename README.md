@@ -239,7 +239,7 @@ Click on the image below to navigate to the demo working video of Lit:
   <a href="https://drive.google.com/file/d/1fwPauyzOnO-QTRjMx1O79KTfFi5JZydd/view?usp=sharing" target="_blank">
     <img src="./images/Windows_btn.png" alt="Lit Demo Video" width="250">
   </a>&nbsp;&nbsp;&nbsp;
-  <a href="https://drive.google.com/file/d/1fwPauyzOnO-QTRjMx1O79KTfFi5JZydd/view?usp=sharing" target="_blank">
+  <a href="https://drive.google.com/file/d/1UMu8ePZQqeVa0O-D28iZL0x0KDDwrNOH/view?usp=sharing)" target="_blank">
     <img src="./images/Linux_btn.png" alt="Lit Demo Video" width="250">
   </a>
 </div>
