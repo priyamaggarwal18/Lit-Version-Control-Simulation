@@ -229,3 +229,9 @@ make run   # build and run tests
 
 
 [🔝](#table-of-contents)
+
+# 
+<div align="center">
+  <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
+  <h3 align="left">Maintained By - Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
+</div>
