@@ -4,18 +4,22 @@ CFLAGS = -Wall -std=c99 -I src
 OBJDIR = obj
 BINDIR = bin
 
-# source files and objfiles creation in there respective folders
-SRCS = src/lit.c src/file_handeling.c src/commit.c src/main.c
-OBJS = $(OBJDIR)/lit.o $(OBJDIR)/file_handeling.o $(OBJDIR)/commit.o $(OBJDIR)/main.o
+# source files and objfiles creation in their respective folders
+SRCS = src/lit.c src/file_handeling.c src/commit.c
+OBJS = $(OBJDIR)/lit.o $(OBJDIR)/file_handeling.o $(OBJDIR)/commit.o
 
-# test files and there obj file creation
+# test files and their obj file creation
 TEST_SRCS = test/test_lit.c
 TEST_OBJS = $(OBJDIR)/test_lit.o
 
+# main application source and object file
+MAIN_SRC = src/main.c
+MAIN_OBJ = $(OBJDIR)/main.o
+
 # target for building the lit executable
-$(BINDIR)/lit: $(OBJS)
+$(BINDIR)/lit: $(OBJS) $(MAIN_OBJ)
 	@mkdir -p $(BINDIR)
-	$(CC) $(CFLAGS) -o $(BINDIR)/lit $(OBJS)
+	$(CC) $(CFLAGS) -o $(BINDIR)/lit $(OBJS) $(MAIN_OBJ)
 	@echo "Build successful! lit executable created in bin directory."
 	@echo "            %@@@&                                            "
 	@echo "         @@@@ @*@@@@                                         "
@@ -46,18 +50,15 @@ $(OBJDIR)/main.o: src/main.c
 	@mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -c src/main.c -o $(OBJDIR)/main.o
 
-# target for building and running the tests
-test: $(TEST_OBJS) $(OBJS)
+# compile the test file into object files (without linking main.o)
+$(OBJDIR)/test_lit.o: test/test_lit.c
+	@mkdir -p $(OBJDIR)
+	$(CC) $(CFLAGS) -c test/test_lit.c -o $(OBJDIR)/test_lit.o
+
+# single command to build the lit program and run tests
+run: $(BINDIR)/lit $(OBJDIR)/test_lit.o $(OBJS)
 	@mkdir -p $(BINDIR)
 	$(CC) $(CFLAGS) -o $(BINDIR)/test_lit $(TEST_OBJS) $(OBJS)
 	@echo "Running tests in test mode..."
 	./$(BINDIR)/test_lit
-
-# clean up
-clean:
-	rm -rf $(OBJDIR) $(BINDIR)
-	@echo "Clean up completed."
-
-# shortcut to build and test
-run: $(BINDIR)/lit test
-	@echo "Run and test complete."
+	@echo "Tests complete."
