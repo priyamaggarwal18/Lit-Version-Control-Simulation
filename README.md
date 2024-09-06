@@ -3,8 +3,8 @@
 </div>
 <div align="center">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/priyamaggarwal18/Lit-Version-Control-Simulation-?style=for-the-badge&color=black">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/priyamaggarwal18/Lit-Version-Control-Simulation-?style=for-the-badge&color=black">&nbsp;&nbsp;
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/priyamaggarwal18/Lit-Version-Control-Simulation-?style=for-the-badge&color=black">&nbsp;&nbsp;
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/priyamaggarwal18/Lit-Version-Control-Simulation-?style=for-the-badge&color=black">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/priyamaggarwal18/Lit-Version-Control-Simulation-?style=for-the-badge&color=black">
   <img alt="Last commit" src="https://img.shields.io/github/last-commit/priyamaggarwal18/Lit-Version-Control-Simulation-?style=for-the-badge&color=black">
 <!--   <img alt="GitHub issues" src="https://img.shields.io/github/issues/priyamaggarwal18/Readme-edits?style=for-the-badge&color=black">
   <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/priyamaggarwal18/Readme-edits?style=for-the-badge&color=black">
