@@ -76,3 +76,92 @@ Lit-Version-Control/
 ├── README.md                # Project documentation
 ```
 [🔝](#table-of-contents)
+
+## Pre Requisites
+
+1. **GCC** (GNU Compiler Collection) for Linux or MinGW for Windows.
+2. **Make** and **Batch** utility.
+3. **Basic C programming knowledge**.
+4. **Git**: To clone the repository and manage version control.
+5. **Text Editor**: Any text editor or IDE like VSCode, Sublime Text, or Vim for editing code.
+6. **Terminal/Command Prompt**: Familiarity with using a terminal or command prompt to run commands.
+
+[🔝](#table-of-contents)
+
+<br>
+
+## Setting Up the Project
+
+### 1. Clone the Repository:
+    ```bash
+    git clone https://github.com/your-username/Lit-Version-Control.git
+    cd Lit-Version-Control
+    ```
+### 2. Open CLI in that folder and run the build command.
+### 3. Build the Project:
+
+For **Linux**:
+```bash
+make run
+```
+
+For **Windows**:
+```bash
+.\build.bat
+```
+
+## Usage
+
+#### Initialize Repository
+
+##### For Windows User
+```bash
+.\bin\lit.exe init
+```
+##### For Linux User
+```bash
+./bin/lit init
+```
+
+#### Add files 
+##### For Windows User
+```bash
+.\bin\lit.exe add file_location\file_name
+```
+##### For Linux User
+```bash
+./bin/lit add file_location\file_name
+```
+
+#### Commit Changes
+##### For Windows User
+```bash
+.\bin\lit.exe commit "Your Commit Message"
+```
+##### For Linux User
+```bash
+./bin/lit commit "Your Commit Message"
+```
+
+#### Push to Remote Repository
+##### For Windows User
+```bash
+.\bin\lit.exe push
+```
+##### For Linux User
+```bash
+./bin/lit push
+```
+
+#### View Commit History
+##### For Windows User
+```bash
+.\bin\lit.exe history
+```
+##### For Linux User
+```bash
+./bin/lit history
+```
+<br>
+
+[🔝](#table-of-contents)
