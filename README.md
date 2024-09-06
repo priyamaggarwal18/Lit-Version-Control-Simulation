@@ -39,6 +39,7 @@
 - [Batch file Overview](#batch-file-overview)
 - [Makefile Overview](#makefile-overview)
 - [Demo](#demo)
+- [Future Scope](#future-scope)
 
 <br>
 
@@ -244,14 +245,30 @@ Click on the image below to navigate to the demo working video of Lit:
   </a>
 </div>
 
+<br>
+
+[🔝](#table-of-contents)
+
+## Future Scope
+As **Lit** evolves, a few key features are planned to make the version control system more robust and closer to basic Git functionality. Below are the planned future enhancements:
+
+- **Branching System**: Implement a simple branching mechanism to create and switch between branches, enabling multiple development paths.
+- **File Status Tracking**: Add the ability to check the status of files (e.g., modified, staged, or committed) within the repository.
+- **Basic Merge Functionality**: Simulate merging changes from one branch to another with basic conflict detection and manual resolution.
+
+These features will enhance **Lit** by providing more control over file changes and simplifying collaborative development workflows.
+
 
 # 
 <div>
   <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
   <h3 align="left">Maintained By - Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
+    <a href="https://priyamaggarwal18.github.io/Portfolio2.0/" target="_blank" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=web&logoColor=white" alt="Portfolio">
+  </a>&nbsp&nbsp;
   <a href="https://www.linkedin.com/in/priyamaggarwal" target="_blank" style="text-decoration: none;">
   <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
+</a>&nbsp&nbsp;
 <a href="https://www.instagram.com/priyamaggarwal18/" target="_blank" style="text-decoration: none;">
   <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
 </a>
