@@ -17,7 +17,7 @@ $(BINDIR)/lit: $(OBJS)
 	@mkdir -p $(BINDIR)
 	$(CC) $(CFLAGS) -o $(BINDIR)/lit $(OBJS)
 	@echo "Build successful! lit executable created in bin directory."
-	@echo "            %@@@&                                           "
+	@echo "            %@@@&                                            "
 	@echo "         @@@@ @*@@@@                                         "
 	@echo "       &@@@ @@@@@ @@@@      @@@@      @@@@ @@@@@@@@@@@        "
 	@echo "    &@@@ @@@@&.% @@& @@@&   @@@@      @@@@     @@@&           "
@@ -25,10 +25,9 @@ $(BINDIR)/lit: $(OBJS)
 	@echo "     @@@@ @@@@ @&@@@ @@@@    @@@@      @@@@    @@@@@           "
 	@echo "        @@ @%&@@ @ &@@@       @@@@@@@@@ @@@@    @@@@@           "
 	@echo "          @@@@,@@@@                                         "
-	@echo "           &@@                                            "
-	@echo " "
-	@echo " Lit Build is Completed "
-	@echo " Lit it Now 🔥 "
+	@echo "             &@@                                            "
+	@echo "Lit Build is Completed"
+	@echo "Lit it Now "
 
 # compile source files into object files
 $(OBJDIR)/lit.o: src/lit.c
@@ -51,15 +50,10 @@ $(OBJDIR)/main.o: src/main.c
 test: $(TEST_OBJS) $(OBJS)
 	@mkdir -p $(BINDIR)
 	$(CC) $(CFLAGS) -o $(BINDIR)/test_lit $(TEST_OBJS) $(OBJS)
-	@echo "Running tests..."
+	@echo "Running tests in test mode..."
 	./$(BINDIR)/test_lit
 
-# compile the test file into object files
-$(OBJDIR)/test_lit.o: test/test_lit.c
-	@mkdir -p $(OBJDIR)
-	$(CC) $(CFLAGS) -c test/test_lit.c -o $(OBJDIR)/test_lit.o
-
-# shortcut to clean up all build artifacts (object files and binaries)
+# clean up
 clean:
 	rm -rf $(OBJDIR) $(BINDIR)
 	@echo "Clean up completed."

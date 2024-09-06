@@ -18,38 +18,30 @@ if exist bin\lit.exe (
     echo Build successful! lit.exe created in bin directory.
 
     echo.
-    echo "            %@@@&                                           "
+    echo "            %@@@&                                            "
     echo "         @@@@ @*@@@@                                         "
     echo "       &@@@ @@@@@ @@@@      @@@@      @@@@ @@@@@@@@@@@        "
     echo "    &@@@ @@@@&.% @@& @@@&   @@@@      @@@@     @@@&           "
     echo "   @@@@  @@@  @ @@@@  @@@@  @@@@      @@@@    @@@@@           "
-    echo "     @@@@@@@@(@&@@@(@@@@    @@@@      @@@@    @@@@@           "
-    echo "        @@@%&@@ @&@@@       @@@@@@@@@ @@@@    @@@@@           "
+    echo "     @@@@ @@@@ @&@@@ @@@@    @@@@      @@@@    @@@@@           "
+    echo "        @@ @%&@@ @ &@@@       @@@@@@@@@ @@@@    @@@@@           "
     echo "          @@@@,@@@@                                         "
     echo "             &@@                                            "
     echo.
     echo "Lit Build is Completed"
-    echo."Lit it Now 🔥"
+    echo "Lit it Now "
     echo.
 
     :: compiled the test file
+    echo Running tests...
     gcc -Wall -std=c99 -I src -c test\test_lit.c -o obj\test_lit.o
     gcc -o bin\test_lit.exe obj\test_lit.o obj\lit.o obj\file_handeling.o obj\commit.o -mconsole
+    bin\test_lit.exe
 
-    :: run the test executable
-    if exist bin\test_lit.exe (
-        echo Running tests...
-        bin\test_lit.exe
-    ) else (
-        echo Test build failed! Check for errors.
-    )
-    
-    :: cleanup the test objects and executable after execution
-    if exist obj\test_lit.o del /Q obj\test_lit.o
-    if exist bin\test_lit.exe del /Q bin\test_lit.exe
-    
+    :: clean up test executables
+    del /Q obj\test_lit.o
+    del /Q bin\test_lit.exe
 ) else (
-    :: output if the build is not successfull
     echo Build failed! Check for errors.
 )
 

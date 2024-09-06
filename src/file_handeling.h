@@ -1,11 +1,10 @@
-#ifndef FILE_HANDELING_H
-#define FILE_HANDELING_H
+#ifndef FILE_HANDLING_H
+#define FILE_HANDLING_H
 
-// declarations for file and directory handling
-int create_directory(const char *path);
-void build_directory_path(char *full_path, const char *base, const char *subdir);
-int copy_file(const char *src, const char *dest);
-int copy_directory(const char *src, const char *dest);
-int file_exists(const char *path);
+int create_directory(const char *path); // function to create directory
+void build_directory_path(char *full_path, const char *base, const char *subdir); //function to build directory
+int copy_file(const char *src, const char *dest); // function to copy file
+int copy_directory(const char *src, const char *dest);// function to copy directory
+int file_exists(const char *path); // to check if file exist or not
 
 #endif
