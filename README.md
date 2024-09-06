@@ -165,3 +165,67 @@ For **Windows**:
 <br>
 
 [🔝](#table-of-contents)
+
+## Libraries Used
+
+- ### Standard C Libraries
+
+1. **stdio.h**: For input and output operations such as `printf`, `scanf`, `fopen`, etc.
+2. **stdlib.h**: For memory allocation, process control, conversions, and other utilities like `malloc`, `free`, `exit`, etc.
+3. **string.h**: For string handling functions such as `strcpy`, `strlen`, `strcat`, etc.
+4. **time.h**: For handling date and time operations (used for timestamps in commits).
+5. **errno.h**: For handling error codes.
+6. **assert.h**: For implementing assertions in test cases to validate conditions.
+7. **dirent.h**: For directory traversal on Linux and POSIX-compliant systems.
+8. **sys/stat.h**: For manipulating file and directory attributes on Linux and POSIX-compliant systems.
+
+- ### Platform-Specific Libraries
+
+#### For Windows
+1. **direct.h**: For handling directory operations on Windows.
+2. **windows.h**: For additional Windows-specific functions and API calls.
+
+#### For Linux/Unix
+1. **unistd.h**: For POSIX operating system API, providing access to the POSIX operating system API, including system calls and utility functions.
+2. **sys/stat.h**: For file status and permissions.
+3. **fcntl.h**: For file control operations, including locking files.
+
+- ### Additional Dependencies
+
+  - **Make**: A build automation tool for Linux environments.
+  - **MinGW** (Minimalist GNU for Windows): A compiler system for Windows, necessary if you're compiling on a Windows platform.
+
+These libraries ensure compatibility across both **Windows** and **Linux** environments, providing the necessary utilities to build, manage files, and interact with the operating system.
+
+<br>
+
+## Batch File Overview
+
+The `build.bat` file is a Windows batch script that automates the process of compiling your project and building the executable. It creates necessary directories (`bin` and `obj`), compiles each source file into object files, and links them to produce the final executable (`lit.exe`).
+
+#### Key Points:
+- **Automates the build process** on Windows.
+- **Handles directory creation** if they do not already exist.
+- **Displays build success** and includes ASCII art for a fun finish.
+
+To use it, simply run:
+```bash
+build.bat
+```
+[🔝](#table-of-contents)
+## Makefile Overview
+
+The **Makefile** automates the build process on Linux. It defines a series of commands to compile source files, link them into an executable, and clean up build artifacts. It also includes test targets to verify the correctness of your project.
+
+#### Key Points:
+- **Automates compilation** on Linux.
+- **Run tests** with `make run`.
+
+Common commands:
+```bash
+make       # build the project
+make run   # build and run tests
+```
+
+
+[🔝](#table-of-contents)
