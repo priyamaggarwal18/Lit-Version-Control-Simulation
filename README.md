@@ -38,6 +38,7 @@
 - [Libraries Used](#libraries-used)
 - [Batch file Overview](#batch-file-overview)
 - [Makefile Overview](#makefile-overview)
+- [Demo](#demo)
 
 <br>
 
@@ -229,3 +230,23 @@ make run   # build and run tests
 
 
 [🔝](#table-of-contents)
+
+## Demo
+
+Click on the image below to navigate to the demo working video of Lit:
+
+<div>
+  <a href="https://drive.google.com/file/d/1fwPauyzOnO-QTRjMx1O79KTfFi5JZydd/view?usp=sharing" target="_blank">
+    <img src="./images/Windows_btn.png" alt="Lit Demo Video" width="250">
+  </a>&nbsp;&nbsp;&nbsp;
+  <a href="https://drive.google.com/file/d/1UMu8ePZQqeVa0O-D28iZL0x0KDDwrNOH/view?usp=sharing" target="_blank">
+    <img src="./images/Linux_btn.png" alt="Lit Demo Video" width="250">
+  </a>
+</div>
+
+
+# 
+<div align="center">
+  <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
+  <h3 align="left">Maintained By - Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
+</div>
