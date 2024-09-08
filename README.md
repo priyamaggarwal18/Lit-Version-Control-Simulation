@@ -222,12 +222,14 @@ The **Makefile** automates the build process on Linux. It defines a series of co
 #### Key Points:
 - **Automates compilation** on Linux.
 - **Run tests** with `make run`.
+- **Note:** The `make` utility may not be installed by default on some Linux distributions. You can install it using the following commands based on your distribution:
 
-Common commands:
-```bash
-make       # build the project
-make run   # build and run tests
-```
+### Installation Commands:
+- **Debian/Ubuntu-based systems:**
+  ```bash
+  sudo apt update
+  sudo apt install make
+  ```
 
 
 [🔝](#table-of-contents)
