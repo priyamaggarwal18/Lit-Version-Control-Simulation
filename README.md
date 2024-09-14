@@ -96,7 +96,7 @@ Lit-Version-Control/
 
 ### 1. Clone the Repository:
   ```bash
-    git clone https://github.com/your-username/Lit-Version-Control.git
+    git clone https://github.com/priyamaggarwal18/Lit-Version-Control-Simulation.git
     cd Lit-Version-Control
   ```
 ### 2. Open CLI in that folder and run the build command.
