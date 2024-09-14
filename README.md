@@ -60,7 +60,7 @@
 ## Project Structure 
 
 ```bash
-Lit-Version-Control/
+Lit-Version-Control-Simulation/
 ├── bin/                     # Binary files (executables) (created on build)
 ├── obj/                     # Object files generated from source code (created on build)
 ├── src/                     # Source code for the project
@@ -97,7 +97,7 @@ Lit-Version-Control/
 ### 1. Clone the Repository:
   ```bash
     git clone https://github.com/priyamaggarwal18/Lit-Version-Control-Simulation.git
-    cd Lit-Version-Control
+    cd Lit-Version-Control-Simulation
   ```
 ### 2. Open CLI in that folder and run the build command.
 ### 3. Build the Project:
