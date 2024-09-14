@@ -95,10 +95,10 @@ Lit-Version-Control/
 ## Setting Up the Project
 
 ### 1. Clone the Repository:
-    ```bash
+  ```bash
     git clone https://github.com/your-username/Lit-Version-Control.git
     cd Lit-Version-Control
-    ```
+  ```
 ### 2. Open CLI in that folder and run the build command.
 ### 3. Build the Project:
 
