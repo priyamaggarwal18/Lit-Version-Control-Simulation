@@ -265,7 +265,7 @@ These features will enhance **Lit** by providing more control over file changes 
 <div>
   <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
   <h3 align="left">Maintained By - Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
-    <a href="https://priyamaggarwal18.github.io/Portfolio2.0/" target="_blank" style="text-decoration: none;">
+    <a href="https://itspriyam.vercel.app" target="_blank" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=web&logoColor=white" alt="Portfolio">
   </a>&nbsp&nbsp;
   <a href="https://www.linkedin.com/in/priyamaggarwal" target="_blank" style="text-decoration: none;">
